@@ -1,3 +1,16 @@
+# Compile Wasm by docker images
+
+```bash
+docker run --rm -v $(pwd):/src -u $(id -u):$(id -g) emscripten/emsdk emmake make all
+```
+and
+```bash
+./main
+----
+list of files
+```
+
+
 # Compile with Makefile
 
 ```bash
@@ -104,16 +117,18 @@ cygwin1.dll => /usr/bin/cygwin1.dll (0x180040000)
 
 ## Read more
 
-    1) https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
+1) https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
 
-    2) https://www.cs.fsu.edu/~myers/howto/g++compiling.txt
+2) https://www.cs.fsu.edu/~myers/howto/g++compiling.txt
 
-    3) https://mbebenita.github.io/WasmExplorer/
+3) https://mbebenita.github.io/WasmExplorer/
 
-    4) https://webassembly.studio/
+4) https://webassembly.studio/
 
-    5) https://developers.google.com/web/updates/2018/03/emscripting-a-c-library
+5) https://developers.google.com/web/updates/2018/03/emscripting-a-c-library
 
-    6) https://v8.dev/blog/emscripten-standalone-wasm
+6) https://v8.dev/blog/emscripten-standalone-wasm
 
-    7) https://emscripten.org/docs/getting_started/downloads.html
+7) https://emscripten.org/docs/getting_started/downloads.html
+
+8) https://emscripten.org/docs/compiling/Building-Projects.html
