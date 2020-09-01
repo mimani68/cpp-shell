@@ -107,3 +107,13 @@ cygwin1.dll => /usr/bin/cygwin1.dll (0x180040000)
     1) https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
 
     2) https://www.cs.fsu.edu/~myers/howto/g++compiling.txt
+
+    3) https://mbebenita.github.io/WasmExplorer/
+
+    4) https://webassembly.studio/
+
+    5) https://developers.google.com/web/updates/2018/03/emscripting-a-c-library
+
+    6) https://v8.dev/blog/emscripten-standalone-wasm
+
+    7) https://emscripten.org/docs/getting_started/downloads.html
