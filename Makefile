@@ -20,5 +20,11 @@ build: clean
 	cp main ~/Desktop/
 	~/Desktop/main
 
+build-wasm:
+	emcc -O3 -s WASM=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]' \
+    -I libwebp \
+    main.cpp \
+    libwebp/src/{dec,dsp,demux,enc,mux,utils}/*.cpp
+
 clean:
 	rm main
